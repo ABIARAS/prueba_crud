@@ -2,6 +2,7 @@ services:
   - type: web
     name: djangorest # Elige un nombre para tu servicio
     env: python
+    plan: free
     buildCommand: "./build.sh"
     startCommand: "gunicorn restframework.wsgi:application"
     envVars:
